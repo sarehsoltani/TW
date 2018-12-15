@@ -1,0 +1,408 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('css/font/shabnam-font-master/Shabnam.eot');
+    src: url('css/font/shabnam-font-master/Shabnam.eot?#iefix') format('embedded-opentype'),
+    url('css/font/shabnam-font-master/Shabnam.woff') format('woff'),
+    url('css/font/shabnam-font-master/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('css/font/shabnam-font-master/Shabnam-Bold.eot');
+    src: url('css/font/shabnam-font-master/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+    url('css/font/shabnam-font-master/Shabnam-Bold.woff') format('woff'),
+    url('css/font/shabnam-font-master/Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('css/font/shabnam-font-master/Shabnam-Light.eot');
+    src: url('css/font/shabnam-font-master/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
+    url('css/font/shabnam-font-master/Shabnam-Light.woff') format('woff'),
+    url('css/font/shabnam-font-master/Shabnam-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+body{
+    font-family: Shabnam;
+}
+
+.cover{
+    background: #141414!important;
+}
+
+.header button{
+    font-size:27px;
+    background-color: black;
+    border: none;
+}
+
+.collapse {
+    font-family: Shabnam;
+    text-align: right;
+}
+
+.collapse a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.collapse {
+    /*margin-left: 950px;z-index:10; position: absolute;background-color:black; width: 400px; */
+}
+.collapse a{
+    color: grey;
+    font-size: 1.1em;
+}
+
+.collapse img{
+    width: 100px;
+    height: 100px;
+}
+
+.collapse i{
+    font-size: 6em;
+}
+
+.collapse i:hover{
+    color: whitesmoke;
+}
+
+.collapse .Hline {
+    width: 400px;
+    border-top: 1px solid grey;
+    margin-left: 20px;
+}
+
+/*Top-carousel*/
+#MainCarousel {
+    background-color: #141414!important;
+}
+
+.description p{
+    font-family: Shabnam;
+    font-weight: bold;
+    color: red;
+}
+
+.FilmsInfo {
+    text-align: right;
+}
+
+.description{
+  background-color: #333333;
+  font-family: Shabnam;
+    height: 280px;
+}
+
+.description .des1{
+    color: gainsboro;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.description .des2{
+    color: darkred;
+    font-size: 1.6em;
+}
+
+
+.description .des3{
+    color: darkred;
+    font-size: 1.6em;
+}
+
+
+.description .des4{
+    color: gainsboro;
+    font-size: 1.2em;
+}
+
+.Play{
+  background-color: #1f1f1f;
+    height:120px;
+}
+
+.Play a:hover{
+    text-decoration: none;
+}
+
+.Play p{
+    color: darkred;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+.verticalLine {
+  border-left: thin solid #666666;
+}
+
+.Play span{
+    color: darkred;
+    font-size: 3.3em;
+}
+
+/*channels*/
+.liveChannels {
+	text-align: center;
+}
+
+.liveChannels .col-md-2 > div {
+	border: 1px solid darkgray;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.liveChannels p {
+	font-family: Shabnam;
+    color: white;
+    font-size: 1em;
+	margin-top: 15px;
+    font-weight: bold;
+}
+
+.liveChannels .landing-icon {
+	font-size: 2.5em;
+	background: #141414;
+	z-index: 1000;
+	position: absolute;
+	top: -20px;
+	left: 35%;
+}
+
+.liveIcon{
+    color: red;
+}
+
+.deskIcon{
+    color: blue;
+}
+
+.recommendationIcon{
+    color: yellow;
+}
+
+.footballIcon{
+    color: red;
+}
+
+.moviesIcon{
+    color: green;
+}
+
+.animationIcon{
+    color: purple;
+}
+
+.carousel-banner{
+    background-color: #1f1f1f;
+    font-family: Shabnam;
+    font-size: 1.2em;
+}
+
+.owl-carousel {
+    background-color: #1f1f1f;
+}
+
+.carousel-banner a:hover{
+    text-decoration: none;
+}
+
+.channel {
+    background-color: red;
+    width: 140px;
+}
+
+.channel img{
+}
+
+        .channel a:hover{
+            text-decoration: none;
+        }
+        .channel-caption{
+            background-color: darkred;
+            font-family: Shabnam;
+            font-size: 1.2em;
+            /*width: 140px;*/
+            text-align: center;
+            /*height: 40px;*/
+            /*line-height: 43px;*/
+            border: 2px solid darkred;
+            color: #eeeeee;
+            /*border-radius: 0 0 10px 10px;*/
+            border-top: 1px solid red;
+            /*position: absolute;*/
+            /*bottom: -1px;*/
+        }
+
+
+.owl-theme .owl-nav .owl-prev {
+  left: 0;
+  margin-top: -6%!important;
+  font-size: 80px !important;
+
+}
+
+.owl-theme .owl-nav {
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+
+.owl-theme .owl-nav .owl-next {
+  right: 0;
+  margin-top: -6%!important;
+  font-size: 85px !important;
+}
+
+.owl-nav .owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-theme .owl-nav button{
+    border: none;
+    color: white;
+    background: #1a1a1a;
+    height: 0px;
+}
+
+
+.owl-theme .owl-nav button :hover {
+  background: #1a1a1a;
+  color: white;
+  height: 0px;
+}
+/*Suggestion*/
+.suggest-item a:hover{
+    text-decoration: none;
+}
+
+.suggest-item{
+    width: 230px;
+}
+
+.suggest-item a:hover{
+    text-decoration: none;
+}
+
+.suggest-item img{
+    border-radius: 3%;
+    height: 155px;
+}
+
+.suggest-info{
+    background-color: #333333;
+    font-family: Shabnam;
+    text-align: right;
+    border-radius: 3%;
+}
+
+.suggest-info .carousel-title{
+    color: gainsboro;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.suggest-info .carousel-subtitle{
+    color: darkgrey;
+    font-size: 0.8em;
+    /*font-weight: bold;*/
+}
+
+.suggest-info .view{
+    color: grey;
+}
+
+
+/*Serial Slider*/
+.serial-item a:hover{
+    text-decoration: none;
+}
+
+.serial-item{
+    width: 200px;
+}
+
+.serial-item img{
+    border-radius: 2%;
+}
+.serial-info{
+    background-color: #333333;
+    font-family: Shabnam;
+    color: whitesmoke;
+    text-align: right;
+    border-radius: 3%;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.serial-info .view{
+    color: grey;
+}
+/*Social Networks*/
+.clip {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.svg--source {
+    display: none
+}
+
+.svg--icon {
+    width: 100%;
+    max-width: 5rem;
+    height: 100%;
+    max-height: 5rem;
+    display: block;
+    margin: 0 auto;
+    fill: currentColor
+}
+
+.svg--icon-smaller {
+    width: 50%;
+]
+}
+
+.share {
+    margin: .5rem 1rem .5rem 0;
+    color: grey;
+    background-color: #1f1f1f;
+    border: .125rem solid #828282;
+    border-radius: 50%;
+}
+
+/*Footer*/
+.footer-column h1{
+    font-family: Shabnam;
+    color: #eeeeee;
+    text-align: right;
+    font-size: 1em
+}
+.footer-column a{
+    font-family: Shabnam;
+    font-size: 0.9em;
+    color: gray;
+    text-align: right;
+    text-decoration: none;
+}
+.footer-column a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.vl {
+  border-right: thin solid gray;
+}

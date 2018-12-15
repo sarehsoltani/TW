@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Telewebion</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="tw.css">
+   <link rel="stylesheet" href="assets/font/font-awesome-4.7.0/css/font-awesome.css">
+   <link rel="stylesheet" href="assets/font/font-awesome-4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="OwlCarousel/owl.carousel.min.css">
+   <link rel="stylesheet" href="OwlCarousel/owl.theme.default.min.css">
+   <script src="OwlCarousel/jquery.min.js"></script>
+   <script src="OwlCarousel/owl.carousel.min.js"></script>
+
+   <script>
+    $(document).ready(function(){
+        $("#MainCarousel").owlCarousel({
+            nav : false,
+            slideSpeed : 150,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            items : 1,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:1,
+                    nav:true
+                },
+                1000:{
+                    items:1,
+                    nav:false,
+                    loop:false
+                }
+            }
+        });
+
+        $('#Hot-Carousel') .owlCarousel({
+            loop:true,
+            dots: false,
+            keyboardNav:true,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                items:1,
+                nav:true
+            },
+                600:{
+                items:3,
+                nav:true
+            },
+            1000:{
+                items:6,
+                nav:true,
+                loop:false
+            }
+        }
+    });
+
+        $('#SerialCarousel,#FilmCarousel') .owlCarousel ({
+            loop:true,
+            dots: false,
+            keyboardNav:true,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:true
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        });
+
+        $('#SuggestionCarousel') .owlCarousel ({
+            loop:true,
+            dots: false,
+            keyboardNav:true,
+            nav:true,
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:true
+                },
+                1000:{
+                    items:4,
+                    nav:true,
+                    loop:false
+                }
+            }
+        });
+
+        $('#UFootballCarousel,#IFootballCarousel,#FavoriteCarousel,#AnimationCarousel') .owlCarousel ({
+            items:4,
+            loop:true,
+            dots: false,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
+            keyboardNav: true,
+            stagePadding:50,
+            nav:true,
+            margin:10,
+            merge:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:1,
+                    nav:true
+                },
+                1000:{
+                    items:4,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    });
+</script>
+</head>
+
+<body style="background-color: black" >
+    <!--header-->
+    <div class="header d-flex flex-row-reverse justify-content-between mt-3">
+        <button class="mr-2 mb-3" data-toggle="collapse" data-target="#menu"><i class="fa fa-bars text-white"></i></button>
+        <div class="p-2">
+            <a href="">
+                <img class="img-fluid" width="200" height="200" src="images/logo-top-new.png">
+            </a>
+        </div>
+        <div class="p-2 ml-2"><button type="button" class="btn btn-dark"><span class="glyphicon glyphicon-search"></span></button></div>
+    </div>
+    <!--collapse-contents-->
+    <div class="collapse" id="menu" style="margin-left: 950px;z-index:10; position: absolute;background-color:black; width: 400px; height: 600px;">
+            <div>
+                <div class="d-flex flex-row-reverse">
+                    <i class=" fa fa-user-circle-o m-5"></i>
+                    <div class="d-flex flex-column mt-5 pt-4">
+                        <a href="" class="mb-3 mr-1">کاربر میهمان</a>
+                        <a href="" class="mr-1">ورود به حساب کاربری</a>
+                    </div>
+                </div>
+                <div class="Hline"></div>
+                <div class="content d-flex flex-column mr-3 mt-2">
+                    <a href="" class="m-4">پخش زنده</a>
+                    <div class="Hline"></div>
+                    <a href="" class="m-4 ">فیلم</a>
+                    <div class="Hline"></div>
+                    <a href="" class="m-4 ">سریال</a>
+                    <div class="Hline"></div>
+                    <a href="" class="m-4 ">کارتون</a>
+                    <div class="Hline"></div>
+                    <a href="" class="m-4 ">آرشیو شبکه ها</a>
+                    <div class="Hline"></div>
+                    <a href="" class="m-4 mb-4">اپلیکیشن اندروید تلوبیون</a>
+                </div>
+          </div>
+     </div>
+    <div class="cover">
+        <!--Top-carousel-->
+        <div id="MainCarousel" class="owl-carousel owl-theme container pt-3 pl-5">
+            <div class="item row no-gutters d-flex flex-row">
+                 <img src="images/film1.jpg" alt="najva" class="col-md-8 flex-fill image-fluid">
+                 <div  class="d-flex flex-column FilmsInfo col-md-4">
+                     <div class="description p-5">
+                        <p class="des1">سریال تلویزیونی</p>
+                        <p class="des2">نجوا</p>
+                        <p class="des3">Whisper</p>
+                        <p class="des4">...وقتی عشق نقطه ضعف آدم میشه</p>
+                      </div>
+                      <div class="Play d-flex flex-row flex-fill p-5">
+                        <a href="#" class="d-flex flex-row">
+                           <p class="mt-3">تماشا کنید</p>
+                           <p class="verticalLine col-md-1 ml-5 mt-4 mb-4" ></p>
+                           <span class="fa fa-play col-md-3 mt-4"></span>
+                        </a>
+                      </div>
+                 </div>
+            </div>
+            <div class="item row no-gutters d-flex flex-row">
+                 <img src="images/film2.jpg" alt="بی قرار " title="بی قرار " class="col-md-8 flex-fill image-fluid">
+                 <div  class="d-flex flex-column FilmsInfo col-md-4">
+                     <div class="description p-5">
+                        <p class="des1">سریال تلویزیونی</p>
+                        <p class="des2">بی قرار</p>
+                        <p class="des4">در جستجوی فرزند</p>
+                      </div>
+                      <div class="Play d-flex flex-row flex-fill p-5">
+                        <a href="#" class="d-flex flex-row">
+                           <p class="mt-3">تماشا کنید</p>
+                           <p class="verticalLine col-md-1 ml-5 mt-4 mb-4" ></p>
+                           <span class="fa fa-play col-md-3 mt-4"></span>
+                        </a>
+                      </div>
+                 </div>
+            </div>
+            <div class="item row no-gutters d-flex flex-row">
+                 <img src="images/film3.jpg" alt="بانوی عمارت" title="بانوی عمارت" class="col-md-8 flex-fill image-fluid">
+                 <div  class="d-flex flex-column FilmsInfo col-md-4">
+                     <div class="description p-5">
+                        <p class="des1">سریال تلویزیونی</p>
+                        <p class="des2">بانوی عمارت</p>
+                        <p class="des4">عشق به سبک شازده های قجری</p>
+                      </div>
+                      <div class="Play d-flex flex-row flex-fill p-5">
+                        <a href="#" class="d-flex flex-row">
+                           <p class="mt-3">تماشا کنید</p>
+                           <p class="verticalLine col-md-1 ml-5 mt-4 mb-4" ></p>
+                           <span class="fa fa-play col-md-3 mt-4"></span>
+                        </a>
+                      </div>
+                 </div>
+            </div>
+            <div class="item row no-gutters d-flex flex-row">
+                 <img src="images/film4.jpg" alt="افسانه اوک نیو" title="افسانه اوک نیو" class="col-md-8 flex-fill image-fluid">
+                 <div  class="d-flex flex-column FilmsInfo col-md-4">
+                     <div class="description p-5">
+                        <p class="des1">سریال تلویزیونی</p>
+                        <p class="des2">افسانه اوک نیو</p>
+                        <p class="des3">Flowers of the Prison</p>
+                        <p class="des4">گلی در زندان</p>
+                      </div>
+                      <div class="Play d-flex flex-row flex-fill p-5">
+                        <a href="#" class="d-flex flex-row">
+                           <p class="mt-3">تماشا کنید</p>
+                           <p class="verticalLine col-md-1 ml-5 mt-4 mb-4" ></p>
+                           <span class="fa fa-play col-md-3 mt-4"></span>
+                        </a>
+                      </div>
+                 </div>
+            </div>
+            <div class="item row no-gutters d-flex flex-row">
+                 <img src="images/film5.jpg" alt="قاچ " title="قاچ " class="col-md-8 flex-fill image-fluid">
+                 <div  class="d-flex flex-column FilmsInfo col-md-4">
+                     <div class="description p-5">
+                        <p class="des1">صفحه ویژه</p>
+                        <p class="des2">قاچ </p>
+                        <p class="des4">قاچ پسر کوچک خندوانه با حضور جناب خان</p>
+                      </div>
+                      <div class="Play d-flex flex-row flex-fill p-5">
+                        <a href="#" class="d-flex flex-row">
+                           <p class="mt-3">تماشا کنید</p>
+                           <p class="verticalLine col-md-1 ml-5 mt-4 mb-4" ></p>
+                           <span class="fa fa-play col-md-3 mt-4"></span>
+                        </a>
+                      </div>
+                 </div>
+            </div>
+        </div>
+        <!--Icons-->
+        <div class='liveChannels container p-2 mt-5'>
+            <div class='container'>
+              <div class='row'>
+                  <div class='col-md-2 liveChannels-pillar'>
+                      <div class="p-5">
+                          <div class='landing-icon pr-3 pl-3 mb-3'>
+                              <i class="fa fa-video-camera liveIcon"></i>
+                          </div>
+                          <p>پخش زنده</p>
+                      </div>
+                  </div>
+                  <div class='col-md-2 liveChannels-pillar'>
+                      <div class="p-5">
+                          <div class='landing-icon pr-3 pl-3 mb-3'>
+                              <i class="fa fa-desktop deskIcon"></i>
+                          </div>
+                          <p>سریال</p>
+                      </div>
+                  </div>
+                  <div class='col-md-2 liveChannels-pillar'>
+                      <div class="p-5">
+                          <div class='landing-icon pr-3 pl-3 mb-3'>
+                              <i class="fa fa-star recommendationIcon"></i>
+                          </div>
+                          <p>پیشنهاد تلوبیون</p>
+                      </div>
+                  </div>
+                  <div class='col-md-2 liveChannels-pillar'>
+                      <div class="p-5">
+                          <div class='landing-icon pr-3 pl-3 mb-3'>
+                              <i class="fa fa-soccer-ball-o footballIcon"></i>
+                          </div>
+                          <p>فوتبال اروپا</p>
+                      </div>
+                  </div>
+                  <div class='col-md-2 liveChannels-pillar'>
+                      <div class="p-5">
+                          <div class='landing-icon pr-3 pl-3 mb-3'>
+                              <i class="fa fa-file-movie-o moviesIcon"></i>
+                          </div>
+                          <p>فیلم</p>
+                      </div>
+                  </div>
+                  <div class='col-md-2 liveChannels-pillar'>
+                      <div class="p-5">
+                          <div class='landing-icon pr-3 pl-3 mb-3'>
+                              <i class="fa fa-child animationIcon"></i>
+                          </div>
+                          <p>کارتون</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <!--live-channels-->
+        <div class="d-flex flex-column mt-5">
+            <div class="container carousel-banner mb-4 p-4">
+                <a href="" class="pull-right text-white"> پخش زنده و آرشیو</a>
+                <a href="" class="pull-left text-primary">
+                    <div>
+                        <i class="fa fa-angle-left"></i>مشاهده همه
+                    </div>
+                </a>
+            </div>
+            <div id="Hot-Carousel" class="owl-carousel owl-theme  container pt-3 pr-3 pl-5">
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/kordestan.png" class="p-3">
+                            <div class="channel-caption p-3">  کردستان</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/abadan.png" class="p-3">
+                            <div class="channel-caption p-3"> آبادان</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/quran.png" class="p-3">
+                            <div class="channel-caption p-3">قرآن</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/salamat.png" class="p-3">
+                            <div class="channel-caption p-3"> سلامت</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/jjtv1.png" class="p-3">
+                            <div class="channel-caption p-3">  جام جم</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/hdtest.png" class="p-3">
+                            <div class="channel-caption p-3"> تماشا</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/omid.png" class="p-3">
+                            <div class="channel-caption p-3"> امید</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/ofogh.png" class="p-3">
+                            <div class="channel-caption p-3">  افق</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/esfahan.png" class="p-3">
+                            <div class="channel-caption p-3"> اصفهان</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/fars.png" class="p-3">
+                            <div class="channel-caption p-3">  فارس</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/baran.png" class="p-3">
+                            <div class="channel-caption p-3">  باران</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/aftab.png" class="p-3">
+                            <div class="channel-caption p-3">آفتاب</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/mostanad.png" class="p-3">
+                            <div class="channel-caption p-3"> مستند سینما</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/amouzesh.png" class="p-3">
+                            <div class="channel-caption p-3"> آموزش</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/namayesh.png" class="p-3">
+                            <div class="channel-caption p-3">  نمایش</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/sepehr.png" class="p-3">
+                            <div class="channel-caption p-3"> سپهر</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/pooya.png" class="p-3">
+                            <div class="channel-caption p-3">  پویا</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/ifilm.png" class="p-3">
+                            <div class="channel-caption p-3">  IFilm</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/nasim.png" class="p-3">
+                            <div class="channel-caption p-3">نسیم</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/varzesh.png" class="p-3">
+                            <div class="channel-caption p-3">  ورزش</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/tv5.png" class="p-3">
+                            <div class="channel-caption p-3">  شبکه 5</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/irinn.png" class="p-3">
+                            <div class="channel-caption p-3">خبر</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/tv3.png" class="p-3">
+                            <div class="channel-caption p-3">  شبکه 3</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/tv4.png" class="p-3">
+                            <div class="channel-caption p-3">  شبکه 4</div>
+                        </a>
+                    </div>
+                  </div>
+            <div class="mt-4 ml-3">
+                    <div class="channel d-flex flex-column mb-4">
+                        <a href="">
+                            <img src="images/tv1.png" class="p-3">
+                            <div class="channel-caption p-3">  شبکه 1</div>
+                        </a>
+                    </div>
+                    <div class="channel d-flex flex-column">
+                        <a href="">
+                            <img src="images/tv2.png" class="p-3">
+                            <div class="channel-caption p-3">  شبکه 2</div>
+                        </a>
+                    </div>
+                  </div>
+        </div>
+        </div>
+        <!--Suggestion-carousel-->
+        <div class="d-flex flex-column mt-5">
+            <div class="container carousel-banner mb-4 p-4 ">
+                <a href="" class="pull-right text-white">پیشنهاد تلوبیون</a>
+                <a href="" class="pull-left text-primary">
+                    <div>
+                        <i class="fa fa-angle-left"></i>بیشتر
+                    </div>
+                </a>
+            </div>
+            <div id="SuggestionCarousel" class="owl-carousel owl-theme  container pt-3 pl-5">
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s4.jpg" alt="گفتگو با نصرالله مدقالچی-بخش ۱" title="گفتگو با نصرالله مدقالچی-بخش ۱" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گفتگو با نصرالله مدقالچی-بخش ۱</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/s1.jpg" alt="گفتگو با نصرالله مدقالچی-بخش ۱" title="گفتگو با نصرالله مدقالچی-بخش ۱" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گفتگو با نصرالله مدقالچی-بخش ۱</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s7.jpg" alt="گفتگو با نصرالله مدقالچی-بخش ۱" title="گفتگو با نصرالله مدقالچی-بخش ۱" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گفتگو با نصرالله مدقالچی-بخش ۱</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/s5.jpg" alt="گفتگو با نصرالله مدقالچی-بخش ۱" title="گفتگو با نصرالله مدقالچی-بخش ۱" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گفتگو با نصرالله مدقالچی-بخش ۱</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s14.jpg" alt="گفتگو با نصرالله مدقالچی-بخش ۱" title="گفتگو با نصرالله مدقالچی-بخش ۱" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گفتگو با نصرالله مدقالچی-بخش ۱</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/s2.jpg" alt="گفتگو با نصرالله مدقالچی-بخش ۱" title="گفتگو با نصرالله مدقالچی-بخش ۱" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گفتگو با نصرالله مدقالچی-بخش ۱</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s15.jpg" alt="گفتگو با نصرالله مدقالچی-بخش ۱" title="گفتگو با نصرالله مدقالچی-بخش ۱" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گفتگو با نصرالله مدقالچی-بخش ۱</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/s16.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">سروده سرایی</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s13.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گفتگو با احمد جانعلی بازیکن سابق سایپا</p>
+                            <p class="carousel-subtitle pr-2">نود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/s12.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">۱۹ اذر ۱۳۹۷</p>
+                            <p class="carousel-subtitle pr-2">نود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s11.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گفتگو با داوود رفعتی درباره شایعه تغییر داور</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/s10.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">موزیک ویدیو سیامک عباسی </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s9.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">متن خوانی رحیم نوروزی</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/s8.jpg" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">متن خوانی وحید شیخ زاده</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s7.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">تاریخ قوم سیستانی</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/s6.jpg" alt="همراه با حسین کلهر - آخه چه کاریه" title="همراه با حسین کلهر - آخه چه کاریه" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">همراه با حسین کلهر - آخه چه کاریه</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s5.jpg" alt="گزینه های روی میز - ۱۹ آذر ۱۳۹۷" title="گزینه های روی میز - ۱۹ آذر ۱۳۹۷">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">گزینه های روی میز - ۱۹ آذر ۱۳۹۷</p>
+                            <p class="carousel-subtitle pr-2">حالا خورشید</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/s4.jpg" alt="از اون ورا - ۱۹ آذر ۱۳۹۷" title="از اون ورا - ۱۹ آذر ۱۳۹۷">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">از اون ورا - ۱۹ آذر ۱۳۹۷</p>
+                            <p class="carousel-subtitle pr-2">حالا خورشید</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s3.jpg" alt="موزیک ویدیو علی پرمهر به نام سشو گیلیم" title="موزیک ویدیو علی پرمهر به نام سشو گیلیم">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">موزیک ویدیو علی پرمهر به نام سشو گیلیم</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g1.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> پخش مسابقات قهرمانی لیگ اروپا ۲۰ و ۲۱ آذر</p>
+                            <p class="carousel-subtitle pr-2">نود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!--UFootball-->
+        <div  class="d-flex flex-column mt-5">
+            <div class="container carousel-banner mb-4 p-4">
+                <a href="" class="pull-right text-white">فوتبال اروپا</a>
+                <a href="" class="pull-left text-primary">
+                    <div>
+                        <i class="fa fa-angle-left"></i>بیشتر
+                    </div>
+                </a>
+            </div>
+            <div id="UFootballCarousel" class="owl-carousel owl-theme  container pt-3 pl-5">
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g1.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f2.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g5.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g3.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g5.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f1.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g3.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f2.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g1.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f2.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g6.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g3.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/f2.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g5.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">حواشی فوتبال</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/f1.jpg" alt="گزینه های روی میز - ۱۹ آذر ۱۳۹۷" title="گزینه های روی میز - ۱۹ آذر ۱۳۹۷">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">حواشی فوتبال</p>
+                            <p class="carousel-subtitle pr-2">نود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g1.jpg" alt="از اون ورا - ۱۹ آذر ۱۳۹۷" title="از اون ورا - ۱۹ آذر ۱۳۹۷">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">جدول لیگ</p>
+                            <p class="carousel-subtitle pr-2">نود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g3.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">موزیک ویدیو علی پرمهر به نام سشو گیلیم</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g2.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column" data-merge="2">
+                    <div><a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g1.jpg" style="width:520px; height:420px;"   >
+                        <div class="suggest-info mt-3" style="width: 520px">
+                            <p class="carousel-title pr-2 mt-2">جدول پخش مسابقات قهمانی اروپا</p>
+                            <p class="carousel-subtitle pr-2">نود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--IFootbal-->
+        <div  class="d-flex flex-column mt-5">
+            <div class="container carousel-banner mb-4 p-4">
+                <a href="" class="pull-right text-white">فوتبال ایران</a>
+                <a href="" class="pull-left text-primary">
+                    <div>
+                        <i class="fa fa-angle-left"></i>بیشتر
+                    </div>
+                </a>
+            </div>
+            <div id="IFootballCarousel" class="owl-carousel owl-theme  container pt-3 pl-5">
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g1.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f2.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g5.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g3.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g5.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f1.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g3.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f2.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g1.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f2.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g6.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g3.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/f2.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g5.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">حواشی فوتبال</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/f1.jpg" alt="گزینه های روی میز - ۱۹ آذر ۱۳۹۷" title="گزینه های روی میز - ۱۹ آذر ۱۳۹۷">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">حواشی فوتبال</p>
+                            <p class="carousel-subtitle pr-2">نود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g1.jpg" alt="از اون ورا - ۱۹ آذر ۱۳۹۷" title="از اون ورا - ۱۹ آذر ۱۳۹۷">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">جدول لیگ</p>
+                            <p class="carousel-subtitle pr-2">نود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/g3.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">موزیک ویدیو علی پرمهر به نام سشو گیلیم</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/g2.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> برترین های هفته چهارم لیگ برتر</p>
+                            <p class="carousel-subtitle pr-2">رادیو شب</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column" data-merge="2">
+                    <div><a href="" class="d-flex flex-column mb-4">
+                        <img src="images/f2.jpg" style="width:520px; height:420px;"   >
+                        <div class="suggest-info mt-3" style="width: 520px">
+                            <p class="carousel-title pr-2 mt-2">گفتگو با نصرالله مدقالچی-بخش ۱</p>
+                            <p class="carousel-subtitle pr-2">نود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--serial-->
+        <div  class="d-flex flex-column mt-5">
+            <div class="container carousel-banner mb-4 p-4 ">
+                <a href="" class="pull-right text-white">سریال</a>
+                <a href="" class="pull-left text-primary">
+                    <div>
+                        <i class="fa fa-angle-left"></i>
+                        بیشتر
+                    </div>
+                </a>
+            </div>
+            <div id="SerialCarousel" class="owl-carousel owl-theme  container pt-3 pr-5 pl-5">
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial15.png" alt="پاورچین" title="پاورچین">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">پاورچین</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial14.png" alt="نقاش باد" title="نقاش باد" >
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">نقاش باد</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial13.png" alt="پایتخت ۳" title="پایتخت ۳">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">پایتخت ۳</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial12.png" alt="تصمیم نهایی" title="تصمیم نهایی" >
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">مرگ تدریجی یک رویا</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial11.png" alt="گسل" title="گسل" >
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">گسل</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial1.png" alt="مرگ تدریجی یک رویا" title="مرگ تدریجی یک رویا">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">مرگ تدریجی یک رویا</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial10.png" alt="هوش سیاه" title="هوش سیاه">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">هوش سباه</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۶۵,۹۵۰</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial9.png" alt="شهرک جیم" title="شهرک جیم">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">شهرک جیم</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۶,۱۶۴</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial8.png" alt="روزگار قریب ( زبان کردی)" title="روزگار قریب ( زبان کردی)">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">روزگار قریب ( زبان کردی)</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۶,۷۹۶</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial7.png" alt="موج و صخره" title="موج و صخره" >
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">موج وصخره</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial6.png" alt="مرغ حق" title="مرغ حق">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">مرغ حق</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial5.png" alt="همسایه ها" title="همسایه ها">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">همسایه ها</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۱۰,۷۹۰</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial4.png" alt="آرایشگاه زیبا" title="آرایشگاه زیبا">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">آرایشگاه زیبا</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۱,۲۳۷</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial3.png" alt="مینو" title="مینو">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">مینو</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۲,۸۳۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial2.png" alt="گذر از رنج ها" title="گذر از رنج ها">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">گذر از رنج ها</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۱,۹۴۴</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial1.png" alt="مرگ تدریجی یک رویا" title="مرگ تدریجی یک رویا">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">مرگ تدریجی یک رویا</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--film-->
+        <div  class="d-flex flex-column mt-5">
+            <div class="container carousel-banner mb-4 p-4 ">
+                <a href="" class="pull-right text-white">فیلم</a>
+                <a href="" class="pull-left text-primary">
+                    <div>
+                        <i class="fa fa-angle-left"></i>
+                        بیشتر
+                    </div>
+                </a>
+            </div>
+            <div id="FilmCarousel" class="owl-carousel owl-theme  container pt-3 pr-5 pl-5">
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial15.png" alt="پاورچین" title="پاورچین">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">پاورچین</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial14.png" alt="نقاش باد" title="نقاش باد" >
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">نقاش باد</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial13.png" alt="پایتخت ۳" title="پایتخت ۳">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">پایتخت ۳</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial12.png" alt="تصمیم نهایی" title="تصمیم نهایی" >
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">مرگ تدریجی یک رویا</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial11.png" alt="گسل" title="گسل" >
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">گسل</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial1.png" alt="مرگ تدریجی یک رویا" title="مرگ تدریجی یک رویا">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">مرگ تدریجی یک رویا</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial10.png" alt="هوش سیاه" title="هوش سیاه">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">هوش سباه</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۶۵,۹۵۰</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial9.png" alt="شهرک جیم" title="شهرک جیم">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">شهرک جیم</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۶,۱۶۴</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial8.png" alt="روزگار قریب ( زبان کردی)" title="روزگار قریب ( زبان کردی)">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">روزگار قریب ( زبان کردی)</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۶,۷۹۶</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial7.png" alt="موج و صخره" title="موج و صخره" >
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">موج وصخره</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial6.png" alt="مرغ حق" title="مرغ حق">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">مرغ حق</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/serial5.png" alt="همسایه ها" title="همسایه ها">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">همسایه ها</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۱۰,۷۹۰</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f7.png" alt="آرایشگاه زیبا" title="آرایشگاه زیبا">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">این همه زندگی</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۱,۲۳۷</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f5.png" alt="مینو" title="مینو">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">فرود</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۲,۸۳۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f7.png">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">بی قرار</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2"> ۱,۹۴۴</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="serial-item d-flex flex-column">
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/f3.png">
+                        <div class="serial-info mt-3">
+                            <p class="carousel-title pr-2 mt-2">ماه از سکو</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye mt-1 pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Favorites Films-->
+        <div class="d-flex flex-column mt-5">
+            <div class="container carousel-banner mb-4 p-4">
+                <a href="" class="pull-right text-white">پر بازدیدترین ها</a>
+                <a href="" class="pull-left text-primary">
+                    <div>
+                        <i class="fa fa-angle-left"></i>بیشتر
+                    </div>
+                </a>
+            </div>
+            <div id="FavoriteCarousel" class="owl-carousel owl-theme  container pt-3 pl-5">
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/p1.png"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">دیوار </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p3.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">مسافر </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/p5.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">خسته </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p1.png"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">  دیوار</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/p4.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> هدیه</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p5.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> بی قرار </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/p7.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> بی قرار</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p3.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">خسته </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/p4.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">مسافر </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p5.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">بی قرار </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/p1.png"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1"> بانوی عمارت</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p3.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">دیوار به دیوار </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/p4.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">پایتخت </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p7.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">بی قرار </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s2.jpg"   >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">بانوی عمارت </p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p6.png">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">تلسکوپ</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/p5.jpg" >
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">بانوی عمارت</p>
+                            <p class="carousel-subtitle pr-2">قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p4.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">پایتخت</p>
+                            <p class="carousel-subtitle pr-2">قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column">
+                  <div>
+                    <a href="" class="d-flex flex-column mb-4">
+                        <img src="images/s3.jpg" alt="موزیک ویدیو علی پرمهر به نام سشو گیلیم" title="موزیک ویدیو علی پرمهر به نام سشو گیلیم">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">موزیک ویدیو علی پرمهر به نام سشو گیلیم</p>
+                            <p class="carousel-subtitle pr-2"> قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="d-flex flex-column">
+                        <img src="images/p3.jpg">
+                        <div class="suggest-info mt-3">
+                            <p class="carousel-title pr-2 mt-1">دیوار به دیوار</p>
+                            <p class="carousel-subtitle pr-2">قسمت ۳۰</p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="suggest-item d-flex flex-column" data-merge="2">
+                    <div><a href="" class="d-flex flex-column mb-4">
+                        <img src="images/p2.jpg" style="width:520px; height:420px;"   >
+                        <div class="suggest-info mt-3" style="width: 520px">
+                            <p class="carousel-title pr-2 mt-2">بانوی عمارت</p>
+                            <p class="carousel-subtitle pr-2">قسمت ۳۰ </p>
+                            <div class="view d-flex flex-row-reverse">
+                                <i class="fa fa-eye pr-2"></i>
+                                <p class="pr-2">۱,۶۲۹</p>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--animation-carousel-->
+        <div  class="d-flex flex-column mt-5">
+        <div class="container carousel-banner mb-4 p-4">
+            <a href="" class="pull-right text-white">کارتون</a>
+            <a href="" class="pull-left text-primary">
+                <div>
+                    <i class="fa fa-angle-left"></i>بیشتر
+                </div>
+            </a>
+        </div>
+        <div id="AnimationCarousel" class="owl-carousel owl-theme  container pt-3 pl-5">
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column mb-4">
+                    <img src="images/a6.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">مسلم ابن عقیل</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/a5.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">افسانه شهر قلی</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column mb-4">
+                    <img src="images/A2.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">زندگی مورچه ها</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/A2.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">زندگی مورچه ها</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column mb-4">
+                    <img src="images/A2.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">زندگی مورچه ها</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/A1.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">ماداگاسکار 1</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column mb-4">
+                    <img src="images/a13.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">حضرت نوح</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/a11.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">یاور</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column mb-4">
+                    <img src="images/a12.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">محله برو بیا</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/a10.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">مینا و دوستان</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column mb-4">
+                    <img src="images/a9.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">مکتب خونه</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/a8.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">پهلوانان پویا</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column mb-4">
+                    <img src="images/A2.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">زندگی مورچه ها</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/a7.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">آرینا</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column mb-4">
+                    <img src="images/a6.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">مسلم ابن عقیل</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/a5.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">افسانه شهر قلی</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/a10.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">مینا و دوستان</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/a4.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">مل مل</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="suggest-item d-flex flex-column">
+              <div>
+                <a href="" class="d-flex flex-column mb-4">
+                    <img src="images/A2.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">زندگی مورچه ها</p>
+                    </div>
+                </a>
+                <a href="" class="d-flex flex-column">
+                    <img src="images/A1.png"   >
+                    <div class="suggest-info mt-3">
+                        <p class="carousel-title pr-2 mt-1">ماداگاسکار 1</p>
+                    </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="suggest-item d-flex flex-column" data-merge="2">
+                <div><a href="" class="d-flex flex-column mb-4">
+                    <img src="images/a3.png" style="width:520px; height:360px;"   >
+                    <div class="suggest-info mt-3" style="width: 520px">
+                        <p class="carousel-title pr-2 mt-3">پرده آخر</p>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!--social networks-->
+        <div class="container SocialNetworks mt-4">
+            <svg class="svg--source" width="0" height="0" aria-hidden="true">
+              <!-- Twitter -->
+              <symbol id="svg--twitter" viewbox="0 -7 15 30">
+                <path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z" />
+              </symbol>
+              <!-- Facebook -->
+              <symbol id="svg--facebook" viewbox="0 -7 16 30">
+                <path d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
+              </symbol>
+              <!-- github -->
+              <symbol id="svg--github" viewbox="-30 -30 150 150">
+                <path d="M61.896,52.548c-3.59,0-6.502,4.026-6.502,8.996c0,4.971,2.912,8.999,6.502,8.999
+                         c3.588,0,6.498-4.028,6.498-8.999C68.395,56.574,65.484,52.548,61.896,52.548z M84.527,29.132c0.74-1.826,0.777-12.201-3.17-22.132
+                         c0,0-9.057,0.993-22.76,10.396c-2.872-0.793-7.736-1.19-12.597-1.19s-9.723,0.396-12.598,1.189C19.699,7.993,10.645,7,10.645,7
+                         c-3.948,9.931-3.913,20.306-3.172,22.132C2.834,34.169,0,40.218,0,48.483c0,35.932,29.809,36.508,37.334,36.508
+                         c1.703,0,5.088,0.004,8.666,0.009c3.578-0.005,6.965-0.009,8.666-0.009C62.191,84.991,92,84.415,92,48.483
+                         C92,40.218,89.166,34.169,84.527,29.132z M46.141,80.574H45.86c-18.859,0-33.545-2.252-33.545-20.58
+                         c0-4.389,1.549-8.465,5.229-11.847c6.141-5.636,16.527-2.651,28.316-2.651c0.045,0,0.093-0.001,0.141-0.003
+                         c0.049,0.002,0.096,0.003,0.141,0.003c11.789,0,22.178-2.984,28.316,2.651c3.68,3.382,5.229,7.458,5.229,11.847
+                         C79.686,78.322,65,80.574,46.141,80.574z M30.104,52.548c-3.588,0-6.498,4.026-6.498,8.996c0,4.971,2.91,8.999,6.498,8.999
+                         c3.592,0,6.502-4.028,6.502-8.999C36.605,56.574,33.695,52.548,30.104,52.548z" />
+              </symbol>
+              <!-- LinkedIn -->
+              <symbol id="svg--linkedin" viewBox="0 0 64 62.888">
+                        <path d="M6.902,0c-4.229,0-6.988,2.85-6.9,6.646c-0.088,3.619,2.677,6.553,6.815,6.553
+                    c4.313,0,7.073-2.934,7.073-6.553C13.807,2.85,11.13,0,6.902,0z M0.345,62.888h13.114V18.074H0.345V62.888z M48.906,18.705
+                    c-4.189,0-8.471-0.866-13.029,6.204h-0.256l-0.23-6.831H23.782c0.174,3.708,0.196,9.245,0.196,14.507v30.303h13.113V36.992
+                    c0-1.215,0.17-2.42,0.51-3.285c0.861-2.414,3.018-4.917,6.645-4.917c4.744,0,6.646,3.708,6.646,9.139v24.959H64V36.291
+                    C64,23.869,57.531,18.705,48.906,18.705z"/>
+              </symbol>
+            </svg>
+              <div class="d-flex flex-row justify-content-center mt-5">
+                <a href="" class="share twitter">
+                  <svg role="presentation" class="svg--icon">
+                    <use xlink:href="#svg--twitter" />
+                  </svg>
+                  <span class="clip">TWITTER</span>
+                </a>
+
+                <a href="" class="share facebook">
+                  <svg role="presentation" class="svg--icon">
+                    <use xlink:href="#svg--facebook" />
+                    <span class="clip">FACEBOOK</span>
+                  </svg>
+                </a>
+
+                <a href="" class="share github">
+                  <svg role="presentation" class="svg--icon">
+                    <use xlink:href="#svg--github" />
+                    <span class="clip">GITHUB</span>
+                  </svg>
+                </a>
+
+                <a href="" class="share linkedin">
+                  <svg role="presentation" class="svg--icon svg--icon-smaller">
+                    <use xlink:href="#svg--linkedin" />
+                    <span class="clip">LINKEDIN</span>
+                  </svg>
+                </a>
+
+              </div>
+        <hr>
+        </div>
+        <!--footer-->
+        <div class="container footer">
+          <div class="row d-flex flex-row-reverse">
+            <div class="footer-column col-md-2 m-5  "><h1 class="mb-4">دسترسی سریع</h1>
+               <div class=" d-flex flex-column vl h-60">
+                <a href="" class="p-2 pr-3">پخش زنده</a>
+                <a href="" class="p-2 pr-3">سریال</a>
+                <a href="" class="p-2 pr-3">فیلم</a>
+                <a href="" class="p-2 pr-3">برنامه کودک</a>
+                <a href="" class="p-2 pr-3">ورود/ثبت نام</a>
+               </div>
+            </div>
+
+            <div class="footer-column col-md-2 m-5"><h1 class="mb-4">دیگر بخشهای سایت</h1>
+              <div class=" d-flex flex-column vl h-95">
+                <a href="" class="p-2 pr-3">جدیدترینها</a>
+                <a href="" class="p-2 pr-3">پیشنهادهای ما</a>
+                <a href="" class="p-2 pr-3">پیشنهاد کاربران</a>
+                <a href="" class="p-2 pr-3">بهترین های صدا سیما</a>
+              </div>
+              </div>
+
+            <div class="footer-column col-md-2 m-5"><h1 class="mb-4">درباره تلوبیون</h1>
+              <div class=" d-flex flex-column vl h-60">
+                <a href="" class="p-2 pr-3">قوانین و مقررات</a>
+                <a href="" class="p-2 pr-3">DMCA</a>
+                <a href="" class="p-2 pr-3">فرصتهای شغلی</a>
+                <a href="" class="p-2 pr-3">همکاری تجاری ما</a>
+                <a href="" class="p-2 pr-3">تماس با ما</a>
+              </div>
+            </div>
+
+            <div class="footer-column col-md-2 m-5"><h1 class="mb-3">ویژه های تلوبیون</h1>
+               <div class=" d-flex flex-column vl ml-5 h-60">
+                <a href="" class="p-2 pr-3">نود</a>
+                <a href="" class="p-2 pr-3">لیگ برتر</a>
+                <a href="" class="p-2 pr-3">خندوانه</a>
+                <a href="" class="p-2 pr-3">خنداننده شو</a>
+                <a href="" class="p-2 pr-3">برنده باش</a>
+               </div>
+            </div>
+          </div>
+
+          <!--download-->
+          <div class="row Download d-flex flex-row-reverse justify-content-center">
+            <a href="">
+                <img src="images/SibApp.png">
+            </a>
+            <a href="">
+                <img src="images/Bazar.PNG">
+            </a>
+            <a href="">
+                <img src="images/Google.PNG">
+            </a>
+          </div>
+          <hr>
+          <p class="row text-dark d-flex justify-content-center">تمامی حقوق این سایت برای تلوبیون محفوظ میباشد © </p>
+        </div>
+
+</body>
+</html>
